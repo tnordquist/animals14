@@ -1,12 +1,13 @@
 package edu.cnm.deepdive.animals14.model;
 
+import androidx.annotation.NonNull;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 import java.util.LinkedList;
 import java.util.List;
+import org.jetbrains.annotations.NotNull;
 
 public class Animal {
-
 
   private String id;
 
@@ -44,4 +45,9 @@ public class Animal {
     this.imageUrl = imageUrl;
   }
 
+  @NonNull
+  @Override
+  public String toString() {
+    return title;
+  }
 }
